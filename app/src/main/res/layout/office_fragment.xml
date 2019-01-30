@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:background="@color/colorOffice">
+
+    <ImageView
+        android:id="@+id/imgOffice"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_columnSpan="2"/>
+
+    <EditText
+        android:id="@+id/etEnterOfficeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter office address"/>
+
+    <EditText
+        android:id="@+id/etEnterOfficeOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter owner"/>
+
+    <EditText
+        android:id="@+id/etEnterOfficeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter size"/>
+
+    <EditText
+        android:id="@+id/etEnterOfficePurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter purpose"/>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:text="Submit"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayOfficeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayOfficeOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner"/>
+
+    <TextView
+        android:id="@+id/tvDisplayOfficeSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayOfficePurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose"/>
+
+</GridLayout>

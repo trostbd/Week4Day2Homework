@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:background="@color/colorHouse">
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_columnSpan="2"/>
+
+    <EditText
+        android:id="@+id/etEnterHomeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter home address" />
+
+    <EditText
+        android:id="@+id/etEnterHomeOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter owner"/>
+
+    <EditText
+        android:id="@+id/etEnterHomeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter size"/>
+
+    <EditText
+        android:id="@+id/etConstructionYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter construction year"/>
+
+    <Button
+        android:id="@+id/btHomeSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:text="Submit"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayHomeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayHomeOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner"/>
+
+    <TextView
+        android:id="@+id/tvDisplayHomeSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplayConstructionYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Construction Year"/>
+
+</GridLayout>

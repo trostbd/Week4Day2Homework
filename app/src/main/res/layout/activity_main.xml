@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.mainactivity.MainActivity">
+
+    <Button
+        android:id="@+id/btHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHouse"
+        android:onClick="onClick"
+        android:text="  House inputs  "
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:background="@color/colorOffice"
+        android:onClick="onClick"
+        android:text="  Office inputs  "
+        app:layout_constraintStart_toEndOf="@id/btHome"
+        app:layout_constraintTop_toTopOf="@id/btHome" />
+
+    <FrameLayout
+        android:id="@+id/frFragOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btHome"/>
+
+</android.support.constraint.ConstraintLayout>
